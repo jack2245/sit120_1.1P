@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color:rosybrown;
+      }
+      form{
+        background-color:aquamarine;
+        width: 300px;
+        height: 300px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 7px 6px 11px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 7px 6px 11px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 7px 6px 11px 0px rgba(0,0,0,0.75);
+      }
+      body {
+    
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+      }
+      .Content {
+        display: flex;
+        width: 750px;
+        flex-direction: column;
+        justify-content: space-around;
+    
+        align-items: center;
+      }
+      table {
+        width: 250px;
+      }
+      td,
+      th {
+        border: 3px solid white;
+      }
+      .h5 {
+        color:gold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Content">
+      <div id="Headings">
+        <br>
+        <br>
+        <h1 style="color: gold">Primary Secondary School</h1>
+        <h2
+          style="
+            background-color:rosybrown;
+            width: 180px;
+            border-radius: 30%;
+          "
+        >
+          Test
+        </h2>
+        <h3>class = Both </h3>
+        <h4 id="h5">Student table</h4>
+        <h5 class="h5"> Fill the details.</h5>
+      </div>
+      <div id="Image">
+        <img
+          style="width: 125px;"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPcAAADMCAMAAACY78UPAAABoVBMVEX////4rBr62XrFKiatVzTjMzPeOCpep7bn5N+8vLz4qgDp+P/4qxR4sr6rUi2/g27EIh6pUjXm5+j3szrjlCLY2tnz+Pv61nW/aUv6vV360ZLOelhVo6/1wXDzyo33pgCGtsH5uU36oxXfroD7sUX+/feNKRT0/v/ns2zOd1jYoIyoTTSWNiDTdk/nVVVro62kytHGeliefGtMJxXcAABMlqPwsrLiIiLBAAC82N2Dmpz5oADmuWlAEAC8sq9mSz7V5+qCrbXEGxbhFRXU3fPTrJ8AAAD34qNGZXTK3uP66+qVABb0yMXSMSn42oKny9L42Ng9JhOpFR6eMCmIjnxmfYaUDR1bcnvtnZnlZV7iTETqiYTod3GSuMlUMSJHHgOJd28wAADSsrCOGQiaQjr1xMMvDgBwJhOxSDziXVTdKxjkbWXrlZDHgE/PkFW2ICLPWVfZw3u+sXytpXxtfXyfsbjhoJ9oa2+SlXzLRUM6OTjLiVJ1eX5/jpUYMT1IWF8kHxvgyc3LuXvv4MXx2bK3zOH45KTjoVClQQq5emPbvLHnbYOGAAAQmElEQVR4nO2cjX8TRRrHQ4KZNslgXyQUm9IFr0aPs43Hpm0Qe6FVSNKWlpfSNq2n91JPQkWhglWPUxHvxL/6ZmZ3szO7MzuT3dkE0v78fAguT/eZb54nM8/Ok2ki0Sst/PXTz3rmvHca+NulSx9+1utRdF8LH1669Olfej2K7uuY+2gJc186gtx//8ft22//c29vb4VonVGDUq8Hqlmzc68hzVlaWppD/3Fl9hm4xS3V0l6vB6pZatxzu70ep24pxrvXw9QuJe6l9V4PU7tUuOe2ej1K/VLhnu71IGOQAvdcny1hRHLupdlejzEOSbn7bwkjknP331yOJc/zZq+HGIvk3HM7vR5jHFKYz5dWej3IGKRUt/R6kDFIiXu716PUL7X6vP+WcLXnsaW+K9kUn0P7bjFT3W/pt8VsdjGFNC1Vs8/KtoXPb968eQT3kY9y3+CY++jomPto6Zj7aOnoct88kv3vhc9vp/91FLkX0+n0F70eRde1ksZq3eu75+tg7ZtpC7zVj3uHIjWarbQjs98esMXac6lxyJtHJNd3zDQrs/92D/1ab7bSXrXu93pUsWvWG2wLPN3n09t9Cjt1a5XK9f1eDy1GraepHP/q7pfLKSrk/buUb1HBXl0eTiav3L5FJ3u/fUXPUuMeFezU8oMk1tgynev9+A2HFXoav3X7StLSg7tf0dNbn22Ws4v26vJYsq0zTK6b/fWNNbowRRPagyQtdnrb7qPpbZbN8Ykkq3eYXO+fJ5VdJse/TPo1zExvvXtSaQyl9KnF5Pg7HGw8vdG5ntbofaiTz83Xi9r8UoFMp5cvnuFie5fy9Ko2/0Nfq2PPzmtzS8Okln9gWNn3gFnKNYLPP1HOcm3YTLBv3b1CYT58dHBw8OihaHrTSD6vmulf6/p0MwHEhWkb+k4NaRP/ceeZG/8vluMAH/pODfuJrnCzOe4u2g+/qW0+rmeLj4vZ+uON2qZL/sMy+0N6pJbpurKczfHbbo4f1DYrxWI2W/wW/1Gsb9QO3entbhzTm1Kmf6cny9kcpwrTO7XLxcEsVp38OVh8XPvG/eeTMUxvKpmuKcvpqDGL9mENpbel9muldsc1eMBOb1pGI890PVnO5vgX1IL1yMW2443BH9cOXJOJGJZyaaZryXI2x+nC9MbmRhu7+H22/dfLNXpF+5LJdR0hl2W6liwX5jie0+qD7XBfG3Teg8EqNbcl41jKFwMzXUeWs8H2FKabT9vhprlxwG/Qdmcu6p7e5oO2NDRkOZOgnsI0+bC25nJnr1Xdv9drz1jTB5qX8qBMfxL5cSSgMLVmNQq1+D31HmTpmY1I95PKonArZz1ylrM5fjLp1UEtS7H+2H4TisXixh2fteYnFWGmR85yepgpz24S0eHm438781rx6X82nTcBXeVwe6a3qOCiTN+KnOV0jvt2k0i8N6l4V39ccHOeF2/8pELnetThLXJ7MtGz3OVmClPh5/vb4s/u/20ecn+C3nSMPD5upmuYy508F+0msfN58ads8eeR9nz+iP8j7pNK9MVsKOXH3textWQNcEi4m8Ss39lrqFC1wVGlekP0MydTmsLNy3QNWY61ml5dTQ0JsZl6rYq5LfDB6ibv420L3RZJy/h8mZ7SuIMawH2DCnj9Gn5EIanuqc993PqG5sl0LVnevrmYm34ec+rU0yPoQZQ/q2nn9mS6piy3FcSdvNMGR/OapXyd3niIl5vNdJ1ZLuEm4OQzXrxM3gDPfkvc3HSma81yGXfysLZRp/fXntYC5jTt3KnFnXiyXMqN91M37P3UKt5PFazcMXGn5ldiyXI5dzL5DO+fb27gDfRvZNTauZ1M39Gb5SrcaEF7dnBweHjwTFitxMdtZ7ruLFfj7kS6x2dluu4sfwW4U0Moy+cXkYZ0alEzt9bBDWHceWdOH9AqlQ9tB9I7OGYnXe+tKe4zYRUbd74r3BfC6pg7Xu4RjWK43wojhlvn0EYGRtgn0YlRfaI+nBc+SITRBzS3xpGNvun1dDaT06WMj7uxm34Nb9uvb6fvoZphGy0j6/j3bc0209vr1vXmLHppNXjc2gaWy036uXMndCnn424u7UybTxLrptk0zfWE2cQHD2YTW2aL/D++3jL3E0/aJ00Ybm0DO3Ei01XuhnkvkUjvJO6bK4hxt81toviumNOJbXMv0ZgzybV+4k40zfQOyudWGv19ZyVhpvf3t83ZdfKF89fMhIl/AdWOuf5ScGd88lrkBCZ+7sa2aeL42r99Z6mF/ncJcePNrmmzQa5vmSvB3CJ3wSPqlHtyymuRmGBvkjvhs0icz3G50Zw2u9Sy4t3cQvyNxpYT7zSKd0sh3rnzfnej7KAzEz6LKY+FCneeKNF+5XB7TfjcDQzYMsnne8XccT/fSw30eg9dn000WpLPN+b2uuNw2/+Ut1+n2DErcZfKhXIBGtVyoVAoQy43RCZgZq2CTMoFQxjve+Z0E/GieTttmo0296xptuz5HL1uofkcqyHmJu5Ape2Ow43+oQxBtURM1sJxI14ISiPopQAMLreB/skoVCrYBIq5E/vNabJ+32/i9Xp3Cx9BQH/Z227ukvV7t7m9h5d5rIB4Q+KubrkrcbkBMamWiEklLDcwCmuE2xByQ4fbCODuVGJuCG1uQ8iNTAg3MEJzQzveQMxtoMSrk3B3hRu7qxB3Qm6jAAg3NMLmOQq3xW0YQMCNTAqE2zCgPu5JETdxVyHuDAE3ihWJN4pVKSQ3RCmDudEtCgJuA0DCDQ3I5b7whzC6IOIm7iqOO968hsJt5TkyCcuNb4G50S0E3DgjCDfKCD539OdvittyV3Hc8bhRuK14o1iF5AYoYzA3DjefmzjBA8EmPG4d+0wUN3ZXJu6gaB1Dn4VCGXHjWIXjtlUlt+Cv37Yq+P3nrt865HIz7vjzmq0SDnch3HxeL5VKa5VKFd8C8Lkr2GStWiEm8XM77oDtjsO9RkzyJZwRoT/fVt1CbiGa15AJynNo4Hk0dm5ol0mOO+68ZtUt0ChE4CZ1C8ThFnIjk0qdmHSFG+B6DYdbMK/ZdcsajhUIzY3rljzE4RZyk7qFZERXuC13oECmUUHdAkC1QkxCc+O6JY+rQyE3XllQvHFGdIPbKpMcd+K6pYLDHZob3wJz4/VMwA1J3YLf3K5wG4w7Ljc2QVMfNolUt+RJuMX1GqlbAOwKt1Mm2e548xogdcsaiVXYugX9aBk9f2PsgLoFFRLIpFwG8XO77siOQEDdQkzCceeZvYuA/RZH8XKP+t3p32/J8fbXJtl7ZHwWidFMbNyZUYE7KlZnfRZTkwyXjDszkefoFxo8c45n8jwTEzff3TkafPIXngmTpTLu3OgER4xN7jzPBCd6LNxid+6IzvJMmM+CPM/9O9He7WqhSUyf7wgjUueOoni4teiY+5hb282PuY+5Xx1u/6Lge2cEXde4uGVNXoUxy7lzkgoAy28SK7fAHTVmTrXVcR/YaxCu/62PO1z/OxHieaxaQapX8xXyyuXGJnXHpCrkfqcTBXDXibuREccdh9syyVdtk5D9b/QUb4yUSU9V1P9GD/ikIV0I2D8ff1dd4wHcsEC54++fk7HafWAQvv9tFKz+N25uh+l/29xjF1U1JuOW97+BURgh3OH7wDMOd0D/Gwb1v23u4eExn4bf5l0clnA77kBQ/xtE7X8bwOoDQ4Of5wbZcg3ofzvcY+Pjf2Y1Pvb2mO/a+JiMG7sL7n8Dp/9tROh/A1n/G2+5BvS/Xe73yrRmZt5H3O+X2YvvSbmJO1n/G9r97/B9YCDrA8v63xT3DHAFoc0N6ItX5dxGoYP+d+h+Cd61xdy4/Sjof+PtWqv/HbCPrI3bcldx3An636QPDEL3vysolwy4ZvW/+XleKmETNMFCqyGtyA153FDOjdyVaHccboOMyO5/h/t826qScEv734HrtyZuxl1s/W/SB4Yoz8X9b9IHhpUKaRVH44YK3NDjTvD9NbyOwWj9bzQ3VEm3Wdz/NuT9bw83jMKN6xaF/jeJVZT+dykf3P/GhUQdt4q53+tR5oaK3MSdYbsT1y2k/x2+DwyB1f8Wfa/HqVuchrQSN4zCzbgTf2+vgiMSmhvY/W8g7n9bdQtpFUfhhorcrLvY+t+4bsmTVnJg3VKV9L8ZboIIy+G4pf1vu26pkOZ1pLolT8ItrltInQoD+9/auNvugJAbhzta/3sNku87VPHTiaheM+z6HLf/1bghj9u6Jq3P8bcUSb2Gv9cjWMeISdWOmZ4+sMI+E78P7OcGnXPz+sDSfaapDvtjo2f93G+y3cdRf7c5QfYeA7khj9u+FsSdG+VsnrFbnbnzPqrE1NmO+qGZiay/k5z19L95Jvz+t48bdMydeS5y19bkLzwTpkUerg+ckZtIP988budacJ5Lm7ycDXavSZf7JS63g9g5txa9VNzta/3L3UYEnxDuT44c90eE+yNqhu9jbhfbxw2OBjfkcQfWqVrUG24q3C43dfGl4J70ydchF5iE5Q5+LhG6Cx5Rp9yZKZ88veTcCb9J4HMJjd3mpi8GP4+N+t156vPchN+k4/63nvPfMm5IhVv+POaVynNJ59yktwZL1YA+sEFMrL6gdB+ZRgQMN1DkhrY7WR/Y6o8VYj4HDeR9YMx9lUYEvxLuX+n3Qo273XYWc3flHDQIPAfN5aaeS5j3QoUbGK/EOWgvN2C5Z+hwK3F35Rx0wTkHLe5/A6f/bShzU88lM8x7ocDdwTnoQpRz0EB2DhrafWAg7QNfpRG93ArP38w5aCDqA4PunIMuSM5Bc7ihh9t9L+TcCueggYZz0Pj0jkH636LzRDPkgE9deA6a5XYRPdwKz2POeaJy2T52zc9zfJ6oHO0ctLVBFXgO2jbBDemgc9A0N+RzS5/HqN/fYrnjz2u2SYk0r8PN5/b39sg5aAF33fp6nOwctM1Nhdvlpt4LKbflbqTtjsNNxlyxzkFH+P6a5Bw0bJ+DhtI+8FUa0csNlLhddwrnoEGk/ndhrUqOUkc6B21x0+Fuc9PvhXLd4rjr5TloNLVZ/W/pvEYjeriBMrdz7FraB+7KOWgj+Bw0vZ8KGG7QITd77LqX56Ch1ZhV64dCHjfsgNtx151z0EH97wKUn4OmuAHDXWZyQKVeY9xx6xZc2uA+cPj+N7675Bz0jHswuSA+B03tK/q5YQfc1DloYf878jnobJUob73wv3dvWbRNpNyAxw2UuEf97jjctskIecl23v/+INw56Mkgbsjjhorck5z+9wmFc9CMifQ88MSAv6U6wHRdM+d4JueC+sACbqDCLXbnjug5z4TZDZVynz/HEZPoubNck6C+P4XY5oaK3Hx37MnsCZ7J+U644+h/X2aFucefstci9r9funPQmPvd91iR8waea+++BP2S8OJx/0lVfcONf5faeCfy/vq1V5T7+vXr//1jJ7qOdeNV575RRItJsRPh1ad4/Uy3uH2Ha8PfnOH2L6kqYrj1hcTLPfDz/97Qpyu0iqG4n1N30DiyN94aYLg//m1Yoy7aL6fwn6G4i6+fcn5er059zHKfOhmHRk5H0MjrMQyqO9xRsE+fPubWp9i5TyFF5H7xG76H5mHFzH3qxeDCwsJgJC1gaR5YF7i1KHZu3dLF/ZvmcbHcv794Xbc0cWse2IvfvYWqZuX1cA/GNLz/A0xwSFfCUs9lAAAAAElFTkSuQmCC"
+          alt=""
+        />
+      </div>
+      <div id="Table">
+        <br />
+        <br />
+        <table style="border: 2px solid green">
+          <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Roll No</th>
+          </tr>
+          <tr>
+            <td>Rishi</td>
+            <td>second</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>satkar</td>
+            <td>nursery</td>
+            <td>23</td>
+          </tr>
+          <tr>
+            <td>sameer</td>
+            <td>tenth</td>
+            <td>55</td>
+          </tr>
+        </table>
+      </div>
+      <br />
+      <div id="Form">
+            <form action="">
+            Name
+            <input type="text" placeholder="Your Number: " />
+            <br />
+            Age
+            <input type="number" placeholder="Your Age: " />
+            <br />
+            Mobile no
+            <input type="number" placeholder="Your Phone Number: " />
+            <br />
+            Password
+            <input type="password" placeholder="Your Password: " />
+            <br />
+            <input type="SUBMIT" />
+            </form>
+      </div>
+    </div>
+  </body>
+</html>
